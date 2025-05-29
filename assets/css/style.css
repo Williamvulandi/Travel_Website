@@ -253,7 +253,7 @@ body { background: var(--white); }
 
 .header-top .logo { margin-inline: auto; }
 
-.header-top .logo img { max-width: 100px; }
+.header-top .logo img { max-width: 190px; }
 
 .header-btn-group {
   justify-self: flex-end;
@@ -375,7 +375,7 @@ body { background: var(--white); }
 \*-----------------------------------*/
 
 .hero {
-  background-image: url("../images/hero-banner.jpg");
+  background-image: url("../images/cape-town-city-sightseeing-day-tour-01-550x358.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -636,32 +636,6 @@ body { background: var(--white); }
 
 
 
-/*-----------------------------------*\
- * #GALLERY
-\*-----------------------------------*/
-
-.gallery { padding-block: var(--section-padding); }
-
-.gallery-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.gallery-image {
-  width: 100%;
-  height: 100%;
-  border-radius: var(--radius-15);
-  overflow: hidden;
-}
-
-.gallery-item:nth-child(3) { grid-area: 1 / 2 / 3 / 3; }
-
-.gallery-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 
 
@@ -892,7 +866,7 @@ address {
 
   .helpline-box .icon-box { padding: 14px; }
 
-  .header-top .logo img { max-width: unset; }
+  /* .header-top .logo img { max-width: unset; } */
 
   .search-btn { font-size: 30px; }
 
