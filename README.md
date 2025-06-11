@@ -5,7 +5,7 @@
   
   <h2 align="center">Travel website</h2>
 
-Travel website is fully responsive travel website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
+Travel website is responsive travel website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
 
 </div>
 
@@ -19,7 +19,7 @@ Before you begin, ensure you have met the following requirements:
 
 ### Run Locally
 
-To run **Tourly** locally, run this command on your git bash:
+To run **Travel** locally, run this command on your git bash:
 
 ### License
 

@@ -5,16 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tourly - Travel agancy</title>
-
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
+  <title>Citysightseeing Website</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <!-- 
@@ -79,19 +70,19 @@
         <ul class="social-list">
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+  <a href="https://www.facebook.com/william.vulandi.1/" target="_blank" rel="noopener noreferrer" class="social-link">
+    <ion-icon name="logo-facebook"></ion-icon>
+  </a>
+</li>
+
+          <li>
+            <a href="https://www.tiktok.com/@williamvulandi577" target="_blank" rel="noopener noreferrer" class="social-link">
+              <ion-icon name="logo-tiktok"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
+            <a href="https://www.youtube.com/@WilliamVulandi" target="_blank" rel="noopener noreferrer"  class="social-link">
               <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
@@ -129,11 +120,6 @@
             <li>
               <a href="#package" class="navbar-link" data-nav-link>packages</a>
             </li>
-
-            <li>
-              <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
-            </li>
-
             <li>
               <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
             </li>
@@ -142,7 +128,7 @@
 
         </nav>
 
-        <button class="btn btn-primary">Book Now</button>
+        <button class="btn btn-primary" id="openBookingBtnTop" >Book Now</button>
 
       </div>
     </div>
@@ -170,66 +156,13 @@
           </p>
 
           <div class="btn-group">
-            <button class="btn btn-primary">Learn more</button>
-
-            <button class="btn btn-secondary">Book now</button>
+            <button class="btn btn-secondary" id="openBookingBtnMain">Book now</button>
           </div>
 
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #TOUR SEARCH
-      -->
-
-      <section class="tour-search">
-        <div class="container">
-
-          <form action="" class="tour-search-form">
-
-            <div class="input-wrapper">
-              <label for="destination" class="input-label">Search Destination*</label>
-
-              <input type="text" name="destination" id="destination" required placeholder="Enter Destination"
-                class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="people" class="input-label">Pax Number*</label>
-
-              <input type="number" name="people" id="people" required placeholder="No.of People" class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="checkin" class="input-label">Checkin Date**</label>
-
-              <input type="date" name="checkin" id="checkin" required class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="checkout" class="input-label">Checkout Date*</label>
-
-              <input type="date" name="checkout" id="checkout" required class="input-field">
-            </div>
-
-            <button type="submit" class="btn btn-secondary">Inquire now</button>
-
-          </form>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #POPULAR
-      -->
+        <!-- #POPULAR -->
 
       <section class="popular" id="destination">
         <div class="container">
@@ -347,9 +280,6 @@
             </li>
 
           </ul>
-
-          <button class="btn btn-primary">More destintion</button>
-
         </div>
       </section>
 
@@ -397,19 +327,12 @@
                       </div>
                     </li>
 
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
+                   
                     <li class="card-meta-item">
                       <div class="meta-box">
                         <ion-icon name="location"></ion-icon>
 
-                        <p class="text">Cape Town</p>
+                        <p class="text">Waterfront</p>
                       </div>
                     </li>
 
@@ -434,11 +357,11 @@
                   </div>
 
                   <p class="price">
-                    R 200.00
+                    R 400.00
                     <span>/ per person</span>
                   </p>
 
-                  <button class="btn btn-secondary">Book Now</button>
+                  <button class="btn btn-secondary" id="openBookingBtnWF">Book Now</button>
 
                 </div>
 
@@ -470,13 +393,7 @@
                       </div>
                     </li>
 
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
+                    
 
                     <li class="card-meta-item">
                       <div class="meta-box">
@@ -507,11 +424,11 @@
                   </div>
 
                   <p class="price">
-                    R 200.00
+                    R 500.00
                     <span>/ per person</span>
                   </p>
 
-                  <button class="btn btn-secondary">Book Now</button>
+                  <button class="btn btn-secondary" id="openBookingBtnCT">Book Now</button>
 
                 </div>
 
@@ -541,13 +458,7 @@
                       </div>
                     </li>
 
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
+                    
 
                     <li class="card-meta-item">
                       <div class="meta-box">
@@ -578,11 +489,11 @@
                   </div>
 
                   <p class="price">
-                    R 200.00
+                    R 600.00
                     <span>/ per person</span>
                   </p>
 
-                  <button class="btn btn-secondary">Book Now</button>
+                  <button class="btn btn-secondary" id="openBookingBtnF">Book Now</button>
 
                 </div>
 
@@ -590,9 +501,6 @@
             </li>
 
           </ul>
-
-          <button class="btn btn-primary">View All Packages</button>
-
         </div>
       </section>
 
@@ -617,7 +525,8 @@
             </p>
           </div>
 
-          <button class="btn btn-secondary">Contact Us !</button>
+          <a href="https://www.citysightseeing.co.za/en/cape-town" target="_blank" class="btn btn-secondary">Contact Us !</a>
+
 
         </div>
       </section>
@@ -673,10 +582,15 @@
             </li>
 
             <li class="contact-item">
-              <ion-icon name="location-outline"></ion-icon>
+  <ion-icon name="location-outline"></ion-icon>
 
-              <address>City Sightseeing Cape Town</address>
-            </li>
+  <address>
+    <a href="https://www.citysightseeing.co.za/en/cape-town" target="_blank" style="text-decoration: none; color: inherit;">
+      City Sightseeing Cape Town
+    </a>
+  </address>
+</li>
+
 
           </ul>
 
@@ -727,9 +641,71 @@
 
   </footer>
 
+<div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <span id="closeBookingBtn" class="close">&times;</span>
 
+    <section class="book-now" id="book-now" style="padding: 50px 0; background-color: #f9f9f9;">
+      <div class="container">
+        <h2 class="h2 section-title">Book Your Tour Now</h2>
+        <p class="section-text">Fill in your details and secure your booking today!</p>
 
+        <form action="" id="book-now-form" class="book-now-form">
+          <div class="input-wrapper">
+            <label for="full-name" class="input-label">Full Name*</label>
+            <input type="text" name="full-name" id="full-name" required placeholder="Enter your full name" class="input-field">
+          </div>
 
+          <div class="input-wrapper">
+            <label for="email" class="input-label">Email Address*</label>
+            <input type="email" name="email" id="email" required placeholder="Enter your email address" class="input-field">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="phone" class="input-label">Phone Number*</label>
+            <input type="tel" name="phone" id="phone" required placeholder="Enter your phone number" class="input-field">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="selected-tour" class="input-label">Select Tour*</label>
+            <select name="selected-tour" id="selected-tour" required class="input-field">
+              <option value="">-- Select a Tour --</option>
+              <option value="Table Mountain">Table Mountain</option>
+              <option value="Campsbay">Campsbay</option>
+              <option value="Waterfront">Waterfront</option>
+              <option value="City Sightseeing Cape Town Tours">City Sightseeing Cape Town Tours</option>
+            </select>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="people" class="input-label">Number of People*</label>
+            <input type="number" name="people" id="people" required placeholder="Enter number of people" class="input-field">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="total-price" class="input-label">Total Price</label>
+            <input type="text" name="total-price" id="total-price" class="input-field" readonly>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="date" class="input-label">Preferred Date*</label>
+            <input type="date" name="date" id="date" required class="input-field">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit Booking</button>
+        </form>
+      </div>
+    </section>
+  </div>
+</div>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script><script type="text/javascript">
+   (function(){
+      emailjs.init("wyxESWadyt1SEpbzL"); // replace this with your EmailJS user ID
+   })();
+</script>
 
   <!-- 
     - #GO TO TOP

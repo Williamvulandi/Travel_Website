@@ -1270,3 +1270,141 @@ address {
   .container { max-width: 1180px; }
 
 }
+.book-now-form {
+  background-color: var(--white);
+  padding: 40px 30px;
+  border-radius: var(--radius-25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+.book-now-form .input-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px; /* space between label and input */
+  flex-wrap: wrap; /* wrap on smaller screens */
+}
+
+/* Fixed width for labels for alignment */
+.book-now-form .input-label {
+  flex: 0 0 140px;
+  font-weight: var(--fw-600);
+  font-size: var(--fs-5);
+  color: var(--black-coral);
+  margin-bottom: 0; /* remove bottom margin since flex center aligns */
+}
+
+/* Input fields take remaining space */
+.book-now-form .input-field {
+  flex: 1 1 300px;
+  padding: 12px 18px;
+  font-size: var(--fs-5);
+  border: 1px solid var(--spanish-gray);
+  border-radius: 50px;
+  background-color: grey;
+  color: white;
+  transition: border-color var(--transition);
+  min-width: 0; /* prevent overflow */
+}
+
+/* Select styling keeps the arrow */
+.book-now-form select.input-field {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23444444'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 12px;
+  padding-right: 40px; /* leave space for arrow */
+}
+
+.book-now-form .input-field::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.book-now-form .input-field:focus {
+  border-color: var(--bright-navy-blue);
+  outline: none;
+}
+
+.book-now-form .btn-primary {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  font-size: var(--fs-5);
+  font-weight: var(--fw-600);
+  color: var(--white);
+  background-color: var(--bright-navy-blue);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color var(--transition);
+  margin-top: 10px;
+}
+
+.book-now-form .btn-primary:hover {
+  background-color: var(--yale-blue);
+}
+
+/* Responsive: stack label/input on small screens */
+@media (max-width: 480px) {
+  .book-now-form .input-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .book-now-form .input-label {
+    flex: none;
+    margin-bottom: 6px;
+  }
+  
+  .book-now-form .input-field {
+    flex: none;
+    width: 100%;
+  }
+}
+/* The modal background */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: var(--white);
+  border-radius: var(--radius-25);
+  padding: 20px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--black-coral);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: var(--bright-navy-blue);
+}
+
